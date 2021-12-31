@@ -1,6 +1,8 @@
 let pet = {
     nome: 'Chloe',
-    idade: '3',
+    animal: 'Gato',
+    sexo: 'Fêmea',
+    idade: '3 anos',
     raca: 'Siamês',
     brinquedo: 'bolinha',
     olhos: 'azuis',
@@ -13,7 +15,7 @@ let pet = {
 //console.log(pet);
 //console.log(pet.nome);
 
-var cat = pet.nome;
+/*var cat = pet.nome;
 var brinquedoPreferido = pet.brinquedo;
 var type = pet.raca;
 var corDosOlhos = pet.olhos;
@@ -22,6 +24,14 @@ var age = pet.idade;
 var birth = pet.aniversario;
 
 console.log(brinquedoPreferido);
+*/
+
+//Outra forma de desestruturação:
+
+var {animal, nome, idade, sexo} = pet;
+console.log(animal, nome, idade, sexo);
+
+
 
 
 
